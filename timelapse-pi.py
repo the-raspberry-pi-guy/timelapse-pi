@@ -12,7 +12,7 @@ path = "/home/pi/timelapse-pi/images/img"
 pic_count = 0
 shutdown = ["sudo", "shutdown", "now"]
 
-rate = 3000
+rate = "3000"
 
 led = PWMLED(14, True, 0, 100)
 button = Button(15, False, None, 3, False)
