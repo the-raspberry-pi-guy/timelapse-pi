@@ -12,7 +12,7 @@ path = "/home/pi/timelapse-pi/images/img"
 pic_count = 0
 shutdown = ["sudo", "shutdown", "now"]
 
-rate = "3000"
+rate = "1000"
 
 led = PWMLED(14, True, 0, 100)
 button = Button(15, False, None, 3, False)
@@ -22,7 +22,7 @@ def starting_flash(light):
 	light.on()
 
 def off_pulse(light):
-	light.pulse(0.5, 0.5, 5, False)
+	light.pulse(0.5, 0.5, 3, False)
 
 def when_held():
 	off_pulse(led)
